@@ -147,8 +147,8 @@ form input {
 }
 .openNavCont {
     clip-path: none;
-    width: 75%;
-    height: auto;
+    width: 80%;
+    height: 48px;
     display: flex;
     flex-direction: initial;
     position: relative;
