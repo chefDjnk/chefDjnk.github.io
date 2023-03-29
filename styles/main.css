@@ -432,7 +432,7 @@
     transition: 600ms ease-in-out;
     z-index: 7;
 }
-.special_close {
+/*.special_close {
     width: 24px;
     height: 24px;
     background-color: var(--soff-black);
@@ -461,20 +461,30 @@
     opacity: 0.6;
     padding: 12% 0;
 }
-.avtive_specialContent {  /*para onClick*/
+.avtive_specialContent {  
     transition: clip-path 0.7s;
     clip-path: inset(0 0 0 0);
     opacity: 1;
+}*/
+
+.title_special {
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 1.2px;
+    font-size: 1.8rem;
+    color: var(--white-header);
 }
 .artic_content {
-    width: 90%;
-    height: 550px;
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 12px;
     place-content: center;
     background-color: var(--primary-color);
-    padding: 0 10px;
+    padding: 20px 12px 40px;
 }
 .spacial_menus {
     width: 100%;
@@ -484,18 +494,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 6px 6px 0 0;
+
+    animation-name: mve;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes mve {
+    from {
+        margin-top: 200px;
+        opacity: 0;
+    }
+    40% {
+        margin-top: 200px;
+        opacity: 0;
+    }
+    to {
+       
+        opacity: 1;
+    }
 }
 .spacial_menus img {
     width: 100%;
     height: 60%;
     object-fit: cover;
-    border-radius: 2px 2px 0 0;
+    border-radius: 6px 6px 0 0;
     margin-bottom: 8px;
+    border-bottom: solid 2px var(--contact);
 }
 .spacial_menus p {
-    margin: 4px 4px 0 4px;
+    margin: 4px;
     text-align: center;
 }
-
+#footer_special {
+    margin-top: 0px;
+}
 
 
