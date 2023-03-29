@@ -5,7 +5,7 @@ document.querySelector('.cerrar').addEventListener('click', closeExperience);
 document.querySelector('.envelp_contact').addEventListener('click', activeForm);
 document.querySelector('.envelp_contact').addEventListener('click', closeForm);
 document.querySelector('.special').addEventListener('click', activeSpecial);
-document.querySelector('.special_close').addEventListener('click', clseSpecial);
+//document.querySelector('.special_close').addEventListener('click', clseSpecial);
 
 
 var formCont = document.querySelector('.formContiner');
@@ -42,6 +42,6 @@ var vewSpecial = document.querySelector('.open_special');
 function activeSpecial() {
     vewSpecial.classList.toggle('avtive_specialContent');
 }
-function clseSpecial() {
-    vewSpecial.classList.remove('avtive_specialContent');
-}
+//function clseSpecial() {
+//    vewSpecial.classList.remove('avtive_specialContent');
+//}
