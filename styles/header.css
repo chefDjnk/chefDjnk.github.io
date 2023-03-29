@@ -18,7 +18,7 @@
     border-bottom: solid 2px var(--primary-color);
 
     animation-name: todo;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
 }
 @keyframes todo {
@@ -51,8 +51,10 @@
     }
     to {
         position: absolute;
-        width: 50vw;
-        height: 25vh;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 15vh;
         z-index: 10;
         background-color: var(--white-header);
     }
@@ -75,6 +77,23 @@
     display: flex;
     position: relative;
     flex-direction: column;
+}
+.backTHome {
+    width: 130px;
+    height: 36px;
+    background-color: var(--contact);
+    display: flex;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-header);
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1.1px;
 }
 .contact {
     width: 84px;
@@ -327,7 +346,6 @@ form textarea:focus {
     background-repeat: no-repeat;
     background-size: cover; 
 }
-
 
 
 
